@@ -1,6 +1,6 @@
 elbv1:
-  image: rancher/external-lb:v0.2.0
-  command: external-lb -provider=elbv1
+  image: rancher/external-lb:v0.2.1
+  command: -provider=elbv1 -debug
   expose: 
    - 1000
   environment:
