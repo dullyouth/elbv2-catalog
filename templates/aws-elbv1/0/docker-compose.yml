@@ -1,6 +1,6 @@
 elbv1:
   image: rancher/external-lb:v0.2.0
-  command: -provider=elbv1
+  command: external-lb -provider=elbv1
   expose: 
    - 1000
   environment:

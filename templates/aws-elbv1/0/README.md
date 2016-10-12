@@ -5,7 +5,7 @@ External LB service for AWS Classic ELB
 The [Classic Load Balancer](https://aws.amazon.com/elasticloadbalancing/classicloadbalancer/) option in AWS routes traffic based on application or network level information and is ideal for simple load balancing of traffic across multiple EC2 instances.
 
 #### About this service
-This provider keeps pre-existing Classic Load Balancers updated with the EC2 instances Rancher services are running on, allowing one to use Elastic Load Balancing to load balancer Rancher services.
+The service keeps pre-existing Classic Load Balancers updated with the EC2 instances on which Rancher services that have exposed one or multiple host ports and have the label `io.rancher.service.external_lb.endpoint` are running on.
 
 ### Usage
 
