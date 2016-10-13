@@ -16,17 +16,17 @@
       required: false
     - variable: "ELBV1_AWS_REGION"
       label: "AWS Region (Optional)"
-      description: "Region in which the load balancers should be created in. Defaults to the region of the instance the service is running on."
+      description: "The region for load balancers and EC2 instances in this Rancher environment. Defaults to the region of the instance the service will be running on."
       type: "string"
       required: false
     - variable: "ELBV1_AWS_VPCID"
       label: "AWS VPC ID (Optional)"
-      description: "VPC in which the load balancers should be created in. Defaults to the VPC of the instance the service is running on."
+      description: "The VPC for the load balancers and EC2 instances in this Rancher environment. Defaults to the VPC of the instance the service will be running on."
       type: "string"
       required: false
     - variable: "ELBV1_USE_PRIVATE_IP"
       label: "EC2 Private IP Lookup"
-      description: "If your EC2 host instances are registered in Rancher with their private IP addresses, then set this to true."
+      description: "If your EC2 instances are registered in Rancher with their private IP addresses, then this must be set to true."
       required: true
       type: "boolean"
       default: false
